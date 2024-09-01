@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Website</title>
+     <!-- =================css===================== -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ==================fonts=================== -->
+     <!-- =================icons=================== -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="navbar" id="navbar">
+        
+    
+        <nav  class="nav">
+           <div class="nav__logo"  data-aos="fade-right"  data-aos-duration="500">
+                <a href="index.html" class="">
+                    <img src="images/Untitled-2.png" class="nav__image" alt="img">
+                
+                 </a>
+            </div>
+        
+             <ul class="nav__list"  data-aos="fade-down"  data-aos-duration="500">
+                 <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">HOME</a>
+                </li>
+                <li class="nav__item">
+                     <a href="#register" class="nav__link">REGISTER</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#bloodbanks" class="nav__link">BLOOD BANKS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#request" class="nav__link">REQUEST BLOOD</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#events" class="nav__link">EVENTS</a>
+                </li>
+                <li class="nav__item">
+                     <a href="#contact" class="nav__link">CONTACT</a>
+                </li>
+            </ul>
+               
+            <div class="btn__user"  data-aos="fade-left"  data-aos-duration="500">
+                <a href="#" class="btn__userlogo">
+                    <i class="uil uil-user user__icon"></i>
+                    <!-- <i class="fas fa-user "></i> -->
+                </a>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-bars"></i>
+            </div>
+            <!-- <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div> -->
+
+        </nav>
+
+        <div class="dropdown__menu open">
+            <ul class="nav__list"  data-aos="fade-down"  data-aos-duration="500">
+                <li class="nav__item">
+                   <a href="#home" class="nav__link active-link">HOME</a>
+               </li>
+               <li class="nav__item">
+                    <a href="#register" class="nav__link">REGISTER</a>
+               </li>
+               <li class="nav__item">
+                   <a href="#bloodbanks" class="nav__link">BLOOD BANKS</a>
+               </li>
+               <li class="nav__item">
+                   <a href="#request" class="nav__link">REQUEST BLOOD</a>
+               </li>
+               <li class="nav__item">
+                   <a href="#events" class="nav__link">EVENTS</a>
+               </li>
+               <li class="nav__item">
+                    <a href="#contact" class="nav__link">CONTACT</a>
+               </li>
+           </ul>
+              
+           <div class="btn__user"  data-aos="fade-left"  data-aos-duration="500">
+               <a href="#" class="btn__userlogo">
+                   <i class="uil uil-user user__icon"></i>
+                   <!-- <i class="fas fa-user "></i> -->
+               </a>
+           </div>
+
+        </div>
+    </header>
+    <!-- main -->
+    <main class="main">
+        <!-- home -->
+        <section class="home" id="home">
+
+        
+
+           
+
+      
+            <div class="home__container container grid">
+
+                
+
+                <div  class="home__data" >
+                    <h1 class="home__title"data-aos="zoom-in-down" data-aos-duration="500">DONATE </h1>
+                    <h3 class="home__subtitle"data-aos="zoom-out" data-aos-duration="500">YOUR BLOOD</h3>
+                    <p class="home__description"data-aos="zoom-in-right" data-aos-duration="500">Once a blood donor, always a lifesaver</p>
+                    <a href="#register" class="button"data-aos="fade-right" data-aos-duration="500"><h3 class="btn__txt">Register as Donor</h3></a>
+                    <a href="#request" class="button"data-aos="fade-left" data-aos-duration="500" ><h3 class="btn__txt">Request Blood</h3></a>
+
+                    <div class="home__social" data-aos="zoom-in-up" data-aos-duration="500">
+                    <span class="home__social-follow">follow us</span>
+                    <div class="home__social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100075139119523&mibextid=ZbWKwL" target="_blank" class="home__social-link"><i class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/i__yahi?igsh=MWlueGtyeHoyMHh6MA==" target="_blank" class="home__social-link"><i class="uil uil-instagram"></i></a>
+                        <a href="https://x.com/" target="_blank" class="home__social-link"><i class="uil uil-twitter-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- register -->
+        <section class="register section" id="register">
+            <h2 data-heading="Donor" class="section__title" data-aos="fade-down"  data-aos-duration="700">Registration Form</h2>
+            <div class="contact__container container grid">
+            <div class="contact__content">
+                    <form id="register-form"  action="" class="contact__form">
+                        <div class="input__container" data-aos="fade-left" data-aos-duration="700">
+                            <input type="text" class="input" required>
+                            <label for="">FullName</label>
+                            <span>FullName</span>
+                        </div>
+
+                        <div class="input__container" data-aos="fade-right" data-aos-duration="700">
+                            <input type="number" id="age" name="age" class="input" required>
+                            <label for="age">Age</label>
+                            <span>Age</span>
+                        </div>
+                        <div class="input__container" data-aos="fade-left" data-aos-duration="700">
+                            <label for="blood-type">Blood Type</label>
+                            <select id="blood-type" name="blood-type" class="input" required>
+                                <option value="A+"></option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                            <span>Blood Type</span>
+                        </div>
+
+                        <div class="input__container" data-aos="fade-right" data-aos-duration="700">
+                            <input type="email" class="input" required>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input__container" data-aos="fade-left" data-aos-duration="700">
+                            <input type="tel" class="input" required>
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+
+                        <button type="submit" class="buttonc" data-aos="fade-up" data-aos-duration="700"><i class="uil uil-navigator button__icon"></i>Register</button>
+                    </form>
+                </div>
+                </div>
+        </section>
+        <!-- blood banks -->
+         <section class="bloodbank section" id="bloodbanks">
+            <h2 data-heading="Blood" class="section__title"  data-aos="fade-down" data-aos-duration="700">Banks</h2>
+        
+
+            <div class="bank__container container grid">
+                <div class="bank__card mix web" data-aos="flip-up"  data-aos="flip-up"  data-aos-duration="1000">
+                    <img src="images/img1.jpeg" alt="" class="bank__img">
+                    <h3 class="bank__title">SRM Medical Hospital</h3>
+                    <span class="bank__button">Explore
+                        <i class="uil uil-arrow-right bank__button-icon"></i>
+                    </span>
+                    <div class="bb__item-detials">
+                        <h3 class="detials__title"></h3>
+                        <p class="detials__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque.</p>
+                        <ul class="detials__info">
+                            <li>Time <span>8am - 6pm</span></li>
+                            <li>Location<span>Trichy-chennai Highway</span></li>
+                            <li>map<span><a href="#">www.domain.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bank__card mix web"  data-aos="flip-down"  data-aos-duration="2000">
+                    <img src="images/img2.jpeg" alt="" class="bank__img">
+                    <h3 class="bank__title">Dhanalakshmi Hospital</h3>
+                    <span class="bank__button">Explore
+                        <i class="uil uil-arrow-right bank__button-icon"></i>
+                    </span>
+                    <div class="bb__item-detials">
+                        <h3 class="detials__title"></h3>
+                        <p class="detials__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque.</p>
+                        <ul class="detials__info">
+                            <li>Time <span>24hrs</span></li>
+                            <li>Location <span>Trichy-chennai Highway</span></li>
+                            <li>map <span><a href="#">www.domain.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bank__card mix web"  data-aos="flip-up"  data-aos-duration="2000">
+                    <img src="images/img3.jpeg" alt="" class="bank__img">
+                    <h3 class="bank__title">Goverment Hospital</h3>
+                    <span class="bank__button">Explore
+                        <i class="uil uil-arrow-right bank__button-icon"></i>
+                    </span>
+                    <div class="bb__item-detials">
+                        <h3 class="detials__title"></h3>
+                        <p class="detials__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque.</p>
+                        <ul class="detials__info">
+                            <li>Time <span>24hrs</span></li>
+                            <li>Location <span>Puthur Thillai Nagar</span></li>
+                            <li>map <span><a href="#">www.domain.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+               
+            </div>
+        </section>
+        <!-- blood Bank  Popup -->
+        <div class="bloodbank__popup">
+            <div class="bloodbank__popup-inner">
+                <div class="bloodbank__popup-content grid">
+                    <span class="bloodbank__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="assets/img/work-1.web" alt="" class="bloodbank__popup-img">
+                    </div>
+                    <div class="bloodbank__popup-info">
+                        <div class="bloodbank__popup-subtitle">Featured - <span>design</span></div>
+
+                        <div class="bloodbank__popup-body">
+                            <h3 class="detials__title">hospital</h3>
+                            <p class="detials__description">Lorem ipsum dolor yahiya sit amet consectetur adipisicing elit. Nihil, doloremque.</p>
+                            <ul class="detials__info">
+                                <li>Time <span>24hrs</span></li>
+                            <li>Location <span>Puthur Thillai Nagar</span></li>
+                            <li>map <span><a href="#">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- request -->
+        <section class="request section" id="request">
+            <h2 data-heading="Request Blood" class="section__title"  data-aos="fade-down"  data-aos-duration="700">Patient Form</h2>
+            <div class="contact__container container grid">
+            <div class="contact__content">
+                    <form id="request-form"  action="" class="contact__form">
+                        <div class="input__container" data-aos="fade-left" data-aos-duration="700">
+                            <input type="text" class="input" required>
+                            <label for="">Patient Name</label>
+                            <span>Patient Name</span>
+                        </div>
+
+                        <div class="input__container" data-aos="fade-right" data-aos-duration="700">
+                            <input type="number" id="age" name="age" class="input" required>
+                            <label for="age">Age</label>
+                            <span>Age</span>
+                        </div>
+                        <div class="input__container" data-aos="fade-left" data-aos-duration="700">
+                            <input type="text" class="input" required>
+                            <label for="">Hospital</label>
+                            <span>Hospital</span>
+                        </div>
+                        <div class="input__container" data-aos="fade-rignt" data-aos-duration="700">
+                            <label for="blood-type">Blood Type</label>
+                            <select id="blood-type" name="blood-type" class="input" required>
+                                <option value="A+"></option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                            <span>Blood Type</span>
+                        </div>
+
+                        <div class="input__container" data-aos="fade-left" data-aos-duration="700">
+                            <input type="email" class="input" required>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input__container" data-aos="fade-right" data-aos-duration="700">
+                            <input type="tel" class="input" required>
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+
+                        <button type="submit" class="buttonc" data-aos="zoom-in-up" data-aos-duration="700"><i class="uil uil-navigator button__icon"></i>Register</button>
+                    </form>
+                </div>
+                </div>
+        </section>
+
+        <section class="events" id="events">
+            <h2 data-heading="Blood Donation" class="section__title" data-aos="fade-down" data-aos-duration="700">Events</h2>
+
+            <div class="events__container container grid">
+                <div class="bloodevents">
+                    <h3 class="bloodevents__title" data-aos="zoom-in-down" data-aos-duration="700">
+                        <i class="uil uil-graduation-ca" ></i> Upcoming Donation Drives
+                    </h3>
+
+                    <div class="timeline" data-aos="zoom-in-right" data-aos-duration="700">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Blood camp</h3>
+                            <p class="timeline__text">ABC school</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt about__icon"></i>
+                            20-08-2024
+                        </span>
+                        </div>
+                        
+                        <div class="timeline__item" data-aos="zoom-in-left" data-aos-duration="700">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Blood Donation Awerness Meeting</h3>
+                            <p class="timeline__text">XYZ college</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                            20-12-2024
+                        </span>
+                        </div>
+                       
+                        <div class="timeline__item" data-aos="zoom-in-right" data-aos-duration="700">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Blood Camp</h3>
+                            <p class="timeline__text">ABC Mahal</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt about__icon"></i>
+                            12-12-2024
+                        </span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact section" id="contact">
+            <h2 data-heading="Get in touch" class="section__title" data-aos="fade-down" data-aos-duration="700">Contact Me</h2>
+            <div class="contact__container container grid">
+             
+                <div class="contact__content">
+                    <form id="contact-form" action="" class="contact__form">
+                        <div class="input__container" data-aos="fade-left" data-aos-duration="700">
+                            <input type="text" class="input">
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+
+                        <div class="input__container" data-aos="fade-right" data-aos-duration="700">
+                            <input type="email" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input__container" data-aos="fade-left" data-aos-duration="700">
+                            <input type="tel" class="input">
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+
+                        <div class="input__container textarea" data-aos="fade-right" data-aos-duration="700">
+                           <textarea name="" id=""  class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+
+                        <button type="submit" class="buttonc"><i class="uil uil-navigator button__icon" data-aos="zoom-out" data-aos-duration="700"></i>Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div data-aos="zoom-in-up" data-aos-duration="700">
+                        <h1 class="footer__title">Blood</h1>
+                        <span class="footer__subtitle">Donation</span>
+                    </div>
+
+                    <ul class="footer__links" data-aos="fade-up" data-aos-duration="700">
+                        <li>
+                            <a href="#register" class="footer__link">Register</a>
+                        </li>
+                        <li>
+                            <a href="#bloodbank" class="footer__link">Blood bank</a>
+                        </li>
+                        <li>
+                            <a href="#request" class="footer__link">Request Blood </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="footer__socials" data-aos="zoom-in-down" data-aos-duration="700">
+                        <a href="https://www.facebook.com/profile.php?id=100075139119523&mibextid=ZbWKwL" target="_blank" class="footer__social"><i class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/i__yahi?igsh=MWlueGtyeHoyMHh6MA==" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a>
+                        <a href="https://x.com/" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>
+                    </div>
+                </div>
+                <p class="footer__copy" >&#169; Blood Donation. All rights reserved</p>
+            </div>
+        </footer>
+
+    </main>
+   <script src="main.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
+<!--  -->
+</body>
+</html>
